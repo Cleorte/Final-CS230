@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes inputAnimation {
+
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes todoAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(
+    to left,
+    rgb(59, 189, 182),
+    rgb(207, 174, 239)
+  );
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.nav h1 {
+  font-size: 3rem;
+}
+
+.userInput {
+  width: 550px;
+  text-align: center;
+}
+
+.userInput input {
+  font-size: larger;
+  margin: 25px 0;
+  width: 80%;
+  outline: none;
+  padding: 8px;
+  border: 3px solid rgb(255, 118, 65);
+  border-radius: 55px;
+  animation: inputAnimation 1s ease-in-out;
+}
+
+
+
+.userInput input:focus {
+  background-color: lightblue;
+  border-color: rgb(231, 106, 29);
+}
+.userInput button {
+  font-size: larger;
+  cursor: pointer;
+  padding: 8px;
+  width: fit-content;
+  transition: 0.5s;
+  outline: none;
+  background-color: deepskyblue;
+  border: 3px solid rgb(84, 84, 255);
+  border-radius: 55px;
+  animation: inputAnimation 1s ease-in-out;
+}
+
+.userInput button:hover {
+  background-color: rgb(120, 194, 255);
+}
+
+.userInput button:active {
+  background-color: rgb(0, 140, 255);
+}
+
+.todoList {
+  width: 500px;
+  margin: auto;
+}
+
+.todo {
+  border: 1px solid lightgray;
+  background-color: azure;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: gray;
+  margin-top: 10px;
+  font-size: 1rem;
+  animation: todoAnimation 1s;
+}
+
+.todo:hover {
+  box-shadow: 0 0 20px lightcyan;
+}
+
+.todo i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.todo.completed {
+  text-decoration: line-through;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav h1 {
+    margin: 10px 0;
+  }
+
+  .userInput {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .userInput {
+    width: 70%;
+  }
+}
