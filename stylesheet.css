@@ -141,6 +141,11 @@ body {
   .userInput {
     width: 90%;
   }
+
+  .todo{
+    width: 70%;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
