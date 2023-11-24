@@ -9,11 +9,43 @@
     <link href='https://fonts.googleapis.com/css?family=Klee One' rel='stylesheet'>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div style="text-align: center;" class="elfsight-app-578d0f21-dc8b-4627-848f-3f0767de1c8f" data-elfsight-app-lazy></div>
 </head>
 
 <body>
+    <!-- weather -->
+  
+    <div class="card">
+        <h1 style="margin-bottom:10px;">Weather</h1>
+        <div class="search">
+            <input type="text" placeholder=" Name of the city..." spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weatherIcon">
+            <h1 class="temp"> 71 °F </h1>
+            <p class="feelsLike" style="font-size: 24px; margin: 10px;">Feels Like 40 °F</p>
+            <h2 class="city"> New York </h2>
+            <div class="details">
+
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p style="font-size: larger;">Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">10 Miles/Hr</p>
+                        <p style="font-size: larger;">Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="container">
 

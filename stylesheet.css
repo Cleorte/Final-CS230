@@ -147,3 +147,82 @@ body {
     align-items: center;
   }
 }
+
+/* weather */
+
+.card{
+    color: black;
+    width: 70%;
+    max-width: 470px;
+    background-image: linear-gradient(to left, rgb(36, 150, 78), rgb(195, 230, 208));
+    margin: 100px auto 0;
+    padding: 40px;
+    text-align: center;
+    border-radius: 55px;
+}
+
+.search{
+    border-radius: 34px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    background-color: azure;
+    border-radius: 34px;
+    color: black;
+    font-size: 20px;
+    height: 45px;
+    flex:1;
+    margin-right: 10px;
+}
+
+.search button{
+    border-radius: 34px;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+}
+
+.search button img{
+    width: 30px;
+}
+
+.weatherIcon{
+    width: 150px;
+    margin-top: auto;
+}
+
+.weather h1{
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+}
+.weather h2{
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.col img{
+    margin-bottom: 10px;
+    width: 60px;
+}
+
+.humidity, .wind{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.weather{
+    display: none;
+}
