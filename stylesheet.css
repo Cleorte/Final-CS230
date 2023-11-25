@@ -146,6 +146,18 @@ body {
     width: 70%;
     align-items: center;
   }
+
+  /* weather */
+  .searchBar{
+    width: 100%;
+    text-align: center;
+  }
+
+  .search{
+    text-align: center;
+  }
+
+  
 }
 
 /* weather */
@@ -164,9 +176,13 @@ body {
 .search{
     border-radius: 34px;
     width: 100%;
-    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
+}
+
+.searchBar{
+    text-align: center;
 }
 
 .search input{
