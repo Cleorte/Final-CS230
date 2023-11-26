@@ -77,7 +77,7 @@ async function checkweather(city) {
     weatherIcon.src = "images/drizzle.png";
   }
   else if (data.weather[0].main == "Mist") {
-    weatherIcon.src = "images/Mist.png";
+    weatherIcon.src = "images/mist.png";
   }
   else if (data.weather[0].main == "Snow") {
     weatherIcon.src = "images/snow.png";
