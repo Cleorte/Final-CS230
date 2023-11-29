@@ -195,14 +195,14 @@ body {
     margin-right: 10px;
 }
 
-.search button{
+.button{
     border-radius: 34px;
     cursor: pointer;
-    width: 55px;
+    width: 70px;
     height: 55px;
 }
 
-.search button img{
+.img{
     width: 30px;
 }
 

@@ -12,43 +12,7 @@
 </head>
 
 <body>
-    <!-- weather -->
-  
-    <div class="card">
-        <h1 style="margin-bottom:10px;">Weather</h1>
-        <div class="search">
-            <input class="searchBar" type="text" placeholder=" City..." spellcheck="false">
-            <br>
-            <br>
-            <button><img src="images/search.png"></button>
-        </div>
-        <div class="weather">
-            <img src="images/rain.png" class="weatherIcon">
-            <h1 class="temp"> 71 °F </h1>
-            <p class="feelsLike" style="font-size: 24px; margin: 10px;">Feels Like 40 °F</p>
-            <h2 class="city"> New York </h2>
-            <div class="details">
-
-                <div class="col">
-                    <img src="images/humidity.png">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p style="font-size: larger;">Humidity</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <img src="images/wind.png">
-                    <div>
-                        <p class="wind">10 Miles/Hr</p>
-                        <p style="font-size: larger;">Wind Speed</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
+    
     <div class="container">
 
         <div class="nav">
@@ -57,15 +21,18 @@
                 <i class="fa-solid fa-clipboard-check"></i>
                 To-Do App
             </h1>
+            
 
             <div class="userInput">
 
                 <input id="addTodo" type="text" placeholder="Write Something Awesome...">
 
-                <button onclick="addTodo()">Submit</button>
+                <button class="button" onclick="addTodo()">Submit</button>
 
             </div>
 
+            <button class="button"> <a href="weather.html"><b>Check Weather!</b></a>
+            </button>
         </div>
 
         <div class="container">
